@@ -3,6 +3,7 @@ import './Home.css'
 import Carousel from 'react-bootstrap/Carousel'
 import ImageGallery from './ImageGallery';
 import Contact from './Contact'
+import Services from './Services'
 
 const ControlledCarousel = () => {
     const [index, setIndex] = useState(0);
@@ -62,6 +63,8 @@ const ControlledCarousel = () => {
 
               {/* Image gallery section  */}
               <ImageGallery></ImageGallery>
+
+              <Services></Services>
 
               {/* Contact Section  */}
               <Contact></Contact>

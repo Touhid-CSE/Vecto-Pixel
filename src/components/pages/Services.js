@@ -1,5 +1,6 @@
 import React from 'react'
 import './Services.css'
+import Testimonials from './Testimonials'
 
 const Services = () => {
     return (
@@ -85,105 +86,7 @@ const Services = () => {
             {/* // <!-- //services --> */}
 
             {/* // <!-- testimonials --> */}
-            <section className="testimonials banner-bottom-agile-w3ls py-5">
-                <div className="container py-md-3">
-                    <h3 className="heading text-capitalize mb-sm-5 mb-4 text-center">Testimonials</h3>
-                    <div className="inner-sec-w3layouts-agileits">
-                        <div className="owl-carousel owl-theme">
-                            <div className="item">
-                                <div className="feedback-info">
-                                    <div className="feedback-top p-4">
-                                        <p> Hethi kub valo video edit kore </p>
-                                    </div>
-                                    <div className="feedback-grids">
-                                        <div className="feedback-img">
-                                            <img src="../../assets/images/ser3.jpg" className="img-fluid" alt="not found" />
-                                        </div>
-                                        <div className="feedback-img-info">
-                                            <h5>Mary Jane</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="feedback-info">
-                                    <div className="feedback-top p-4">
-                                        <p> hethi kom kore valo kaj kore </p>
-                                    </div>
-                                    <div className="feedback-grids">
-                                        <div className="feedback-img">
-                                            <img src="/images/ser4.jpg" className="img-fluid" alt="" />
-                                        </div>
-                                        <div className="feedback-img-info">
-                                            <h5>Peter Guptill</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="feedback-info">
-                                    <div className="feedback-top p-4">
-                                        <p> hethi noakhali thake , noakhali er manus vlo </p>
-                                    </div>
-                                    <div className="feedback-grids">
-                                        <div className="feedback-img">
-                                            <img src="images/ser3.jpg" className="img-fluid" alt="" />
-                                        </div>
-                                        <div className="feedback-img-info">
-                                            <h5>Steven Wilson</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="feedback-info">
-                                    <div className="feedback-top p-4">
-                                        <p> kaj sundor but gejay beshi ektu </p>
-                                    </div>
-                                    <div className="feedback-grids">
-                                        <div className="feedback-img">
-                                            <img src="images/ser4.jpg" className="img-fluid" alt="" />
-                                        </div>
-                                        <div className="feedback-img-info">
-                                            <h5>Mary Jane</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="feedback-info">
-                                    <div className="feedback-top p-4">
-                                        <p> tara tari kaj delivery kore, eita valo lagse </p>
-                                    </div>
-                                    <div className="feedback-grids">
-                                        <div className="feedback-img">
-                                            <img src="images/ser3.jpg" className="img-fluid" alt="" />
-                                        </div>
-                                        <div className="feedback-img-info">
-                                            <h5>Peter Guptill</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="feedback-info">
-                                    <div className="feedback-top p-4 p-4">
-                                        <p> dhsajdhjas das dah kdha d ja hd kah d dah dkahd jkadh a d hawdhadkah </p>
-                                    </div>
-                                    <div className="feedback-grids">
-                                        <div className="feedback-img">
-                                            <img src="images/ser4.jpg" className="img-fluid" alt="" />
-                                        </div>
-                                        <div className="feedback-img-info">
-                                            <h5>Steven Wilson</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Testimonials></Testimonials>
             {/* // <!-- //testimonials --> */}
         </div>
     )

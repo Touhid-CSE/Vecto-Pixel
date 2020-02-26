@@ -129,63 +129,7 @@ i.clr3{
 }
 /*-- //services --*/
 
-/*-- feedback --*/
-.feedback-top {
-    border: 2px solid #E91E63;
-	position: relative;
-}
 
-.feedback-top:after {
-	content: '';
-	position: absolute;
-	top: 100%;
-	left: 14%;
-	width: 0;
-	height: 0;
-	border-top: 15px solid #E91E63;
-	border-right: 4px solid transparent;
-	border-left: 12px solid transparent;
-	transform: rotate(0deg);
-}
-
-.feedback-top p {
-	color: #333;
-	font-size: 15px;
-	margin: 0;
-	line-height: 2em;
-}
-
-.feedback-img {
-    width: 30%;
-    margin: 0 auto;
-}
-
-.feedback-grids {
-	margin: 1em 0 0;
-}
-
-.feedback-img img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.feedback-info {
-	margin: 0 1em !important;
-}
-
-.feedback-img-info {
-	text-align: center;
-}
-
-.feedback-img-info h5 {
-	color: #333;
-	font-size: 1.2em;
-	letter-spacing: 1px;
-	font-weight: 600;
-	margin-top: .5em;
-}
-
-/*-- //feedback --*/
 
 
 /*-- Responsive design --*/
