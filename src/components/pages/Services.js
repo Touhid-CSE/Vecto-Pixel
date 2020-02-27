@@ -1,12 +1,13 @@
 import React from 'react'
 import './Services.css'
 import Testimonials from './Testimonials'
+import WhyChooseUs from './WhyChooseUs'
 
 const Services = () => {
     return (
         <div className="">
-        {/* // <!-- services --> */}
-            <section className="inner-services py-5">
+        {/* services */}
+            <section className="services py-5">
                 <div className="container py-lg-5 py-3">
                     <h3 className="heading text-center mb-sm-5 mb-4">Our Services</h3>
                     <div className="row service-grids">
@@ -43,51 +44,10 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            {/* // <!-- //services --> */}
+            {/* services */}
 
-            {/* // <!-- services --> */}
-            <section className="services">
-                <div className="banner-dott1 py-5">
-                    <div className="container py-3">
-                    <h3 className="heading text-center mb-5 pb-lg-5">Why Choose Us</h3>
-                        <div className="row servicegrids">
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="grid1">
-                                    <i className="fa fa-trophy mr-3" aria-hidden="true"></i>
-                                    <h3>Reasonable <span>prices</span></h3>
-                                    <p className=""> Phasellus iaculis sapien. </p> 
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 mt-sm-0 mt-5">
-                                <div className="grid1">
-                                    <i className="fa fa-trophy mr-3" aria-hidden="true"></i>
-                                    <h3>Creative <span>Works</span></h3>
-                                    <p className=""> Phasellus iaculis sapien. </p> 
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 mt-lg-0 mt-5">
-                                <div className="grid1">
-                                    <i className="fa fa-trophy mr-3" aria-hidden="true"></i>
-                                    <h3>Your <span>Text</span></h3>
-                                    <p className=""> Phasellus iaculis sapien. </p> 
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6 mt-lg-0 mt-5">
-                                <div className="grid1">
-                                    <i className="fa fa-trophy mr-3" ></i>
-                                    <h3>Your <span>Text</span></h3>
-                                    <p className=""> Phasellus iaculis sapien. </p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* // <!-- //services --> */}
-
-            {/* // <!-- testimonials --> */}
+            <WhyChooseUs></WhyChooseUs>
             <Testimonials></Testimonials>
-            {/* // <!-- //testimonials --> */}
         </div>
     )
 }
