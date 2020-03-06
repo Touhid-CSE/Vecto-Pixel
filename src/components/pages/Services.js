@@ -10,7 +10,18 @@ const Services = () => {
         <div>
             <section className="services py-5">
                 <div className="container py-lg-5 py-3">
-                    <h3 className="heading text-center mb-sm-5 mb-4">Our Services</h3>
+                    <h3 className="heading text-center">Our Services</h3>
+                    <p className="service-sub-heading w-75 mx-auto">The main purpose here is to make you able to use graphic design tools and techniques in a professional way. Graphic Design helps to build brand identity of a company.</p>
+                     {/* main options start */}
+                        <Nav variant="pills" className="mb-sm-5 mb-4 justify-content-center" defaultActiveKey="fsfs">
+                            <Nav.Item>
+                                <Nav.Link eventKey="fsfs">Graphics Design</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="link-1">Digital Marketing</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    {/* Main options end */}
                     <div className="row service-grids">
                         {/* new section  */}
                         <div className="row tabs">
@@ -85,7 +96,7 @@ const Services = () => {
                                                     <div className="gd-left">
                                                         <h3>Professional Graphic Design</h3>
                                                         <p>The main purpose here is to make you able to use graphic design tools and techniques in a professional way. Graphic Design helps to build brand identity of a company. Thus it needs to be conceptual an...</p>
-                                                        <a href="https://creativeitinstitute.com/professional-graphic-design-training-in-bangladesh"><span className="highlight-icon">» </span>Read More</a>
+                                                        <a href ><span className="highlight-icon">» </span>Read More</a>
                                                     </div>
                                                     <div className="seat">
                                                         <p>Admission Going On </p>
@@ -105,7 +116,7 @@ const Services = () => {
                                                 <div className="gd-left">
                                                     <h3>Responsive Web Design</h3>
                                                     <p>Web design means creating websites with user-friendly structure and with aesthetic approach. A web designer always thinks about the layout, color scheme and unique design of a website. But their task...</p>
-                                                    <a href="https://creativeitinstitute.com/responsive-web-design-training-in-bangladesh"><span className="highlight-icon">» </span>Read More</a>
+                                                    <a href><span className="highlight-icon">» </span>Read More</a>
                                                 </div>
                                                 <div className="seat">
                                                     <p>Admission Going On</p>

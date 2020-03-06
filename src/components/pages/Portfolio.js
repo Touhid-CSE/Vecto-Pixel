@@ -1,41 +1,33 @@
 import React from 'react'
+import './Portfolio.css'
 
-export default function Portfolio({portfolioLinks}) {
+export default function Portfolio() {
     return (
-        <div>
-             {/* <!-- Portfolio Grid --> */}
-             <section className="bg-light page-section" id="portfolio">
-                <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 text-center">
-                    <h2 className="section-heading text-uppercase">Portfolio</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
+        <div className="image-gallery-container">
+            <h2 className="image-gallery-heading">Latest Projects</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <div className="image-gallery">
+                <div className="image-item">
+                    <img src="http://unsplash.it/355/237/?random" alt="Reload" />
                 </div>
-                <div className="row">
-                    {
-                        portfolioLinks && portfolioLinks.map(({ title, caption}, index) => 
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src="http://unsplash.it/350/200/?random" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>{title}</h4>
-                                    <p className="text-muted">{caption}</p>
-                                </div>
-                            </div>
-                        )
-                    }
-                   
+                <div className="image-item">
+                    <img src="http://unsplash.it/355/237/?random" alt="Reload" />
                 </div>
+                <div className="image-item">
+                    <img src="http://unsplash.it/355/237/?random" alt="Reload" />
                 </div>
-            </section>
+                <div className="image-item">
+                    <img src="http://unsplash.it/355/237/?random" alt="Reload" />
+                </div>
+                <div className="image-item">
+                    <img src="http://unsplash.it/355/237/?random" alt="Reload" />
+                </div>
 
+                <div className="image-item">
+                    <img src="http://unsplash.it/355/237/?random" alt="Reload" />
+                </div>
+               
+            </div>
         </div>
     )
 }

@@ -40,11 +40,11 @@ export default function NavBar() {
             <div className={navStyle.navbarLinks} style={toggoleControl}>
                 <ul>
                     <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/">Home</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/about">About</NavLink></li>
                     <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/services">Services</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/contact">Contact</NavLink></li>
-                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/crud-firebase">Crud</NavLink></li>
-                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/firebase-file-upload">Upload</NavLink></li>
-                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/firebase-image-list">Images</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/admin">Admin</NavLink></li>
                
                 </ul>
             </div>

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import './Home.css'
 import Carousel from 'react-bootstrap/Carousel'
-import ImageGallery from './ImageGallery';
+import About from './About'
+import Portfolio from './Portfolio';
 import Contact from './Contact'
 import Services from './Services'
 
@@ -60,9 +61,10 @@ const ControlledCarousel = () => {
                 </Carousel.Item>
               </Carousel>
                
+               <About></About>
 
               {/* Image gallery section  */}
-              <ImageGallery></ImageGallery>
+              <Portfolio></Portfolio>
 
               <Services></Services>
 

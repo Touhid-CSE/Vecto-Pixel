@@ -8,72 +8,40 @@ import './Testimonials.css'
 export default function Testimonials() {
 
     let settings = {
-        infinite: false,
+        infinite: true,
+        dots: true,
         speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         arrows:true,
-        slidesToShow: 5,
-        slidesToScroll: 4,
-    
+        slidesToShow: 2,
+        slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1366,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 3
-                }
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
             },
             {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 3
-                }
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
             },
             {
-                breakpoint: 1080,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-
-            {
-                breakpoint: 667,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
             }
-        ]
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     }
 
     return (
@@ -91,16 +59,16 @@ export default function Testimonials() {
                                 ):(
                                     <Slider {...settings}>
                                         { users.map(user => (
-                                                <div className="item" key={user.id}>
-                                                    <div className="feedback-info">
-                                                        <div className="feedback-top p-4">
+                                                <div className="testimonial-item pt-5" key={user.id}>
+                                                    <div className="testimonial-item-info card px-5">
+                                                        <div className="testimonial-item-top">
                                                             <p> {user.message} </p>
                                                         </div>
-                                                        <div className="feedback-grids">
-                                                            <div className="feedback-img">
-                                                                <img src={user.imgUrl} className="img-fluid" alt="not found" />
+                                                        <div className="testimonial-item-grids">
+                                                            <div className="testimonial-item-img">
+                                                                <img src={user.imgUrl} className="" alt="not found" />
                                                             </div>
-                                                            <div className="feedback-img-info">
+                                                            <div className="testimonial-item-img-info">
                                                                 <h5>{user.name}</h5>
                                                             </div>
                                                         </div>

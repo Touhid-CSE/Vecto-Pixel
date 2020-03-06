@@ -7,6 +7,9 @@ import Display from './pages/crud/firebase/Display'
 import ImageUpload from './pages/crud/firebase/ImageUpload'
 import ImagesHook from './pages/crud/firebase/ImagesHook'
 import Services from './pages/Services'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
+import AdminPage from './pages/admin/AdminPage'
 // import About from './pages/About'
 
 export default function MyRoute() {
@@ -14,8 +17,11 @@ export default function MyRoute() {
         <div>
             <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route path="/about" component={About}/>
                 <Route path="/services" component={Services}/>
+                <Route path="/portfolio" component={Portfolio}/>
                 <Route path="/contact" component={Contact}/>
+                <Route path="/admin" component={AdminPage}/>
                 <Route path="/crud-firebase" component={Display}/>
                 <Route path="/firebase-file-upload" component={ImageUpload}/>
                 <Route path="/firebase-image-list" component={ImagesHook}/>
