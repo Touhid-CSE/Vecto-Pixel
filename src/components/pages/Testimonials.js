@@ -14,7 +14,7 @@ export default function Testimonials() {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows:true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {

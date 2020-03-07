@@ -10,8 +10,8 @@ export default function NotFound() {
                     <h2>404</h2>
                     <h3 className="mb-4"> Oops! Page Not Found </h3>
                     <p className="mb-4">The page you are looking fo is not found in this server ! please go back to home page</p>
-                    <a href="index.html" className="mr-sm-3">Home page </a>
-                    <a href="contact.html" className=""> Contact Us </a>
+                    <a href="home" className="mr-sm-3">Home page </a>
+                    <a href="contact" className=""> Contact Us </a>
                 </div>
             </section>
             {/* <!-- //error content --> */}
