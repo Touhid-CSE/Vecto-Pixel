@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import  navStyle from './NavBar.module.css'
+import logo from "../../assets/images/Vecto-Pixel-Logo.png"
+// import classnames from 'classnames'
 
 export default function NavBar() {
 
@@ -30,7 +32,9 @@ export default function NavBar() {
     return (
         <nav className={navStyle.navbar}>
             <div className={navStyle.logo}>
-                <NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/">Vecto Pixel</NavLink>
+                <NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/">
+                    <img alt="logo" src={logo} />
+                </NavLink>
             </div>
             <a href="#toggleButton" onClick={handleToggleButtonClick} className={navStyle.toggleButton}>
                 <span className={navStyle.bar}></span>
