@@ -1,16 +1,12 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
-import Contact from './pages/Contact'
-import NotFound from './pages/NotFound'
-import Home from './pages/Home'
-import Display from './pages/crud/firebase/Display'
-import ImageUpload from './pages/crud/firebase/ImageUpload'
-import ImagesHook from './pages/crud/firebase/ImagesHook'
-import Services from './pages/Services'
-import About from './pages/About'
-import Portfolio from './pages/Portfolio'
+import Contact from './pages/User/Contact/Contact'
+import NotFound from './pages/NotFound/NotFound'
+import Home from './pages/User/Home/Home'
+import Services from './pages/User/Services/Services'
+import About from './pages/User/About/About'
+import Portfolio from './pages/User/Portfolio/Portfolio'
 import AdminPage from './pages/admin/AdminPage'
-// import About from './pages/About'
 
 export default function MyRoute() {
     return (
@@ -22,9 +18,6 @@ export default function MyRoute() {
                 <Route path="/portfolio" component={Portfolio}/>
                 <Route path="/contact" component={Contact}/>
                 <Route path="/admin" component={AdminPage}/>
-                <Route path="/crud-firebase" component={Display}/>
-                <Route path="/firebase-file-upload" component={ImageUpload}/>
-                <Route path="/firebase-image-list" component={ImagesHook}/>
                 <Route component={NotFound}/>
             </Switch>
         </div>

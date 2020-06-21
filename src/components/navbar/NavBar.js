@@ -2,21 +2,11 @@ import React, { useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import  navStyle from './NavBar.module.css'
 import logo from "../../assets/images/Vecto-Pixel-Logo.png"
-// import classnames from 'classnames'
 
 export default function NavBar() {
 
     const [toggoleControl, setToggoleControl] = useState({display: ""})
-    // const [width, setWidth] = useState(window.innerWidth)
-
-    // React.useEffect(() => {
-    //     const handleResize = () => setWidth(window.innerWidth)
-    //     window.addEventListener('resize', handleResize)
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize)
-    //     };
-    // })
-
+    
     const handleToggleButtonClick = () => {
        
         toggoleControl.display ==='none' ?  

@@ -1,20 +1,6 @@
-/* .w3ls-banner{
-	position: relative;
-} */
-/* .banner-dott {
-    background: url(./images/dott.png)repeat 0px 0px;
-    background-size: 2px;
-    -webkit-background-size: 2px;
-    -moz-background-size: 2px;
-    -o-background-size: 2px;
-    -ms-background-size: 2px;
-	min-height:780px;
-} */
-
- /* for dotted background */
 
 .why-choose-us-dott {
-    background: url(./images/dott.png)repeat 0px 0px;
+    background: url(../../../../assets/images/dott.png)repeat 0px 0px;
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -25,7 +11,7 @@
 /*-- WhyChooseUs ---*/
 
 .why-choose-us{
-	background: url(./images/cover3.jpg) no-repeat 0px 0px;
+	background: url(../../../../assets/images/cover3.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	background-attachment: fixed;
 }

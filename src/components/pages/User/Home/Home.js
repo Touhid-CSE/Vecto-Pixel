@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import './Home.css'
 import Carousel from 'react-bootstrap/Carousel'
-import About from './About'
-import Portfolio from './Portfolio';
-import Contact from './Contact'
-import Services from './Services'
+import About from '../About/About'
+import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact'
+import Services from '../Services/Services'
+import lp1 from "../../../../assets/images/lp1.jpg"
+import lp2 from "../../../../assets/images/lp2.jpg"
 
 const ControlledCarousel = () => {
     const [index, setIndex] = useState(0);
@@ -22,8 +24,9 @@ const ControlledCarousel = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="http://unsplash.it/1080/720/?random"
-                    height="600px"
+                    // src="http://unsplash.it/1080/720/?random"
+                    src={lp1}
+                    height="550px"
                     alt="First slide"
                   />
                   <Carousel.Caption>
@@ -34,29 +37,15 @@ const ControlledCarousel = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="http://unsplash.it/1080/720/?random"
-                    height="600px"
+                    // src="http://unsplash.it/1080/720/?random"
+                    src={lp2}
+                    height="550px"
                     alt="Second slide"
                   />
           
                   <Carousel.Caption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="http://unsplash.it/1080/720/?random"
-                    height="600px"
-                    alt="Third slide"
-                  />
-          
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
