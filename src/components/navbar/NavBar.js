@@ -38,7 +38,7 @@ export default function NavBar() {
                     <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/services">Services</NavLink></li>
                     <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/contact">Contact</NavLink></li>
-                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/admin">Admin</NavLink></li>
+                    {/* <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/admin">Admin</NavLink></li> */}
                
                 </ul>
             </div>

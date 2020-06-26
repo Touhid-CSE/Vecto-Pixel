@@ -3,8 +3,8 @@ import './Home.css'
 import Carousel from 'react-bootstrap/Carousel'
 import About from '../About/About'
 import Portfolio from '../Portfolio/Portfolio';
-import Contact from '../Contact/Contact'
 import Services from '../Services/Services'
+import Contact from '../Contact/Contact'
 import lp1 from "../../../../assets/images/lp1.jpg"
 import lp2 from "../../../../assets/images/lp2.jpg"
 
@@ -55,10 +55,10 @@ const ControlledCarousel = () => {
               {/* Image gallery section  */}
               <Portfolio></Portfolio>
 
-              <Services></Services>
+              <Contact />
 
-              {/* Contact Section  */}
-              <Contact></Contact>
+              <Services></Services>
+              
 
       </div>
     );
